@@ -1,7 +1,7 @@
 <?php
 $start_time = microtime(true) * 1000;
 
-$set_numbers = array(1,2,3,4,5,6,7,8,9,24,20,-5,-8,-10,35,45,-20);
+$set_numbers = array(1,2,3,4,5,6,7,8,9,24,20,-5,-8,-10,35,45,-20,0,25);
 $target = 25 ; 
 // find terget geter then number
 //$count_array = sizeof($set_numbers);
@@ -12,14 +12,14 @@ $ultimate_numbers = [];
 $stor_numbers = [];
 foreach($set_numbers as $val)
 {   
-    if($target < $val)
+    if($target <= $val)
     {
         array_push($gaterthen_number,$val);
     }elseif($target > $val && $val > 0)
     {
         array_push($lessthen_number,$val);
 
-    }elseif($target > $val && $val < 0)
+    }elseif($target > $val && $val <= 0)
     {
         array_push($nagative_number,$val);
     }

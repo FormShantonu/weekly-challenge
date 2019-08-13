@@ -48,10 +48,5 @@ class Chalange extends Controller
                 
         } 
         echo "<br>";
-    }
-
-    public function chalange4()
-    {
-        
-    }
+    }    
 }
